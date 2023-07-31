@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hod kostkou</title>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/players.css">
+  <link rel="stylesheet" href="styles/movements.css">
+  <link rel="stylesheet" href="styles/dicePool.css">
+</head>
+<body>
+  <section class="dice-game">
+    <aside class="first-player-left-side">
+      <div id="total-first-bg" class="total-score">
+        <h3>Celkové skóre 1. hráče</h3>
+
+        <div class="score-container">
+          <span id="total-score-fp">0</span><span> / 100</span>
+        </div>
+      </div>
+
+      <div id="actual-first-bg"  class="actual-score">
+        <h3>Současné skóre</h3>
+        <span id="actual-score-fp">0</span>
+      </div>
+    </aside>
+
+    <div class="dice-pool">
+      <img title="Při hodu č. 1 ztrácíš skóre a hraje další hráč" id="dice-img" src="/images/empty.jpg" alt="Skóre hozené kostky">
+    </div>
+
+    <aside class="second-player-right-side">
+      <div id="total-second-bg" class="total-score">
+        <h3>Celkové skóre 2. hráče</h3>
+        <div class="score-container">
+          <span id="total-score-sp">0</span><span> / 100</span>
+        </div>
+      </div>
+
+      <div id="actual-second-bg" class="actual-score">
+        <h3>Současné skóre</h3>
+        <span id="actual-score-sp">0</span>
+      </div>
+    </aside>
+
+    <div class="movements">
+      <p onClick="randomNumber()" id="throw-dice" title="Začne náhodný hod kostkou">Hodit kostkou</p>
+      <p onClick="holdScore()" id="hold-score" title="Současné skóre přičte k celkovému skóre (poté hraje další hráč)">Podržet skóre</p>
+      <p onClick="newGame()" id="new-game" title="Započne nová hra (vynuluje hru)">Nová hra</p>
+    </div>
+  </section>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>

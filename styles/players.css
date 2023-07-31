@@ -1,0 +1,54 @@
+.first-player-left-side {
+  grid-area: a;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.second-player-right-side {
+  grid-area: c;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.first-player-left-side .total-score,
+.second-player-right-side .total-score {
+  background-color: brown;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 10rem;
+  height: 5rem;
+
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.first-player-left-side .actual-score,
+.second-player-right-side .actual-score {
+  background-color: brown;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+
+  width: 10rem;
+  height: 5rem;
+
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px black;
+}

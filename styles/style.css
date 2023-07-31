@@ -1,0 +1,46 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: brown;
+  height: 100vh;
+
+  font-size: 1.3rem;
+  user-select: none;
+}
+
+.dice-game {
+  display: grid;
+  grid-template-areas: "a b c"
+                       "a b c"
+                       "d d d";
+  
+  background-color: white;
+  color: white;
+
+  text-shadow: 1px 1px 5px black;
+
+  width: 70%;
+  height: 70%;
+
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+@media (max-width: 935px)  {
+  .dice-game {
+    grid-template-areas: "a"
+                         "a"
+                         "b"
+                         "b"
+                         "c"
+                         "c"
+                         "d";
+    gap: 2rem;
+    overflow: scroll;
+  }
+}
